@@ -1,0 +1,27 @@
+package br.com.senaisp.bauru.secao03.aula06;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		// "Olá, participante, e bem-vindo ao programa favorito da America!"
+		JOptionPane.showConfirmDialog(null,
+				"Olá, participante, e bem-vindo ao programa de namoro favorito da America!",
+                "Este é o ULTIMATO!",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE);
+		
+		String[] acceptableValues = {"MUITO", "DEMAIS", "PRA CARALHO"};
+        String input2 = (String)JOptionPane.showInputDialog(null,
+                "Quão brava você ficou com a final?",
+                "Este é o ULTIMATO!",
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                acceptableValues,
+                acceptableValues[1]);
+		
+
+	}
+
+}

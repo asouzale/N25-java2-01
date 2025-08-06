@@ -1,0 +1,11 @@
+package br.com.senaisp.bauru.dateshow;
+
+import javax.swing.JOptionPane;
+
+public class DateShow {
+
+	public static void main(String[] args) {
+		JOptionPane.showConfirmDialog(null, "aaaa", "bbb", 0);
+	}
+
+}

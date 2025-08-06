@@ -1,0 +1,11 @@
+package br.com.senaisp.bauru.secao03.aula05;
+
+public class Exemplo02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long intLongValor = 1L; //1 - inteiro, 1L - longo
+		System.out.println(intLongValor);
+	}
+
+}

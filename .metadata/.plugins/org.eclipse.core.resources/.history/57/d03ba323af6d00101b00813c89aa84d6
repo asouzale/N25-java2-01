@@ -1,0 +1,20 @@
+package br.com.senaisp.bauru.dateshow;
+
+import javax.swing.JOptionPane;
+
+public class DateShow {
+
+	public static void main(String[] args) {
+		int ret = JOptionPane.showConfirmDialog(null, "Olá, participante, e bem-vindo ao programa de namoro favorito da América! Antes de te enviarmos para um encontro, precisamos fazer 10 perguntas de compatibilidade amorosa. Tudo bem?", 
+									"Bem-vindo, participante!", JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE);
+		if (ret == JOptionPane.YES_OPTION) {
+			String qt01 =(String) JOptionPane.showInputDialog(null,"Qual o seu nome?", "Questão 1",JOptionPane.QUESTION_MESSAGE,null,null,"String");
+			String qt02 =(String) JOptionPane.showInputDialog(null,"Complete esta frase: Minha ideia de uma noite romântica envolve__________________.", "Questão 2",JOptionPane.QUESTION_MESSAGE,null,null,"String");
+			String qt03 =(String) JOptionPane.showInputDialog(null,"Qual sua comida favorita?", "Questão 3",JOptionPane.QUESTION_MESSAGE,null,null,"String");
+		} else
+			JOptionPane.showMessageDialog(null, 
+					"Que pena. Volte se mudar de ideia.", 
+					"Não está certo", JOptionPane.ERROR_MESSAGE);
+	}
+
+}
