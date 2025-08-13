@@ -5,18 +5,19 @@ import javax.swing.JOptionPane;
 public class Input02 {
 
 	public static void main(String[] args) {
-		JOptionPane.showMessageDialog(null,
+        JOptionPane.showMessageDialog(null,
                 "There's no input here, just a message",
                 "Title",
-                JOptionPane.ERROR_MESSAGE);//0 
+                JOptionPane.ERROR_MESSAGE);
+
         
         String input1 = (String)JOptionPane.showInputDialog(null,
                 "Is this a question?",
                 "Dialog Title",
-                JOptionPane.WARNING_MESSAGE, // TIPO DE MENSAGEM
-                null,//ICONE
-                null,// OPÇÕES DE ESCOLHA
-                "Type something here.");
+                JOptionPane.WARNING_MESSAGE, //tipo de mensagem
+                null,//Ícone
+                null,//Opções de escolha
+                "Type something here."); //opção default
         
         
         String[] acceptableValues = {"Choice 1", "Choice 2", "Choice 3"};
@@ -27,7 +28,7 @@ public class Input02 {
                 null,
                 acceptableValues,
                 acceptableValues[1]);
-
-	}
+                
+    }
 
 }

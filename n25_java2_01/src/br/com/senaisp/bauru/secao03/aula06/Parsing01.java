@@ -9,10 +9,9 @@ public class Parsing01 {
 		//mostrando os valores
 		System.out.println("Preço da camiseta: " + shirtPrice);
 		System.out.println("Percentual imposto: " + taxRate);
-		System.out.println("gibberish para int: " + Integer.parseInt(gibberish));
-		
-		
-
+		//Exemplos de erros de conversão abaixo!
+		System.out.println("Percentual imposto: " + Integer.parseInt("0.05"));
+		System.out.println("gibberish para int :" + Integer.parseInt(gibberish));
 	}
 
 }

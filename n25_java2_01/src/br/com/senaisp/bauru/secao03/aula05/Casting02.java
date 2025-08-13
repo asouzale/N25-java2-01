@@ -15,10 +15,9 @@ public class Casting02 {
         int americasPop =   339_000_000;
         int oceanaPop   =    13_000_000;
         System.out.println("World Population in 1950: " 
-                +(0L+africaPop +asiaPop +europePop +americasPop +oceanaPop));
+                +(0L+ africaPop +asiaPop +europePop +americasPop +oceanaPop));
         
         //The current population of Asia is an estimated 60% of the world population
-        //FEZ CONTA MATEMATICA DE SOMA E DEU NEGATIVO, PODE SER QUE EXTOUROU A QUANTIDADE DE N°
         double percentAsia = 0.6;
         long currentAsiaPop = (long) (currentWorldPop * percentAsia);
         System.out.println("Current Asia Population: " +currentAsiaPop);
