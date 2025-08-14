@@ -21,6 +21,8 @@ public class CalculoBaskaraTeste {
 		//mostrando x1 e x2
 		System.out.println("O valor de X1 = " + ca.getX1());
 		System.out.println("O valor de X2 = " + ca.getX2());
+		//fechando scanner
+		sc.close();
 
 	}
 
