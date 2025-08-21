@@ -1,0 +1,12 @@
+package br.com.senaisp.bauru.secao08.aula15;
+
+public class PessoaTest {
+
+	public static void main(String[] args) {
+		Pessoa pe01 = new Pessoa();
+		pe01.setNome(("Roberval da Silva");
+		pe01.set
+
+	}
+
+}

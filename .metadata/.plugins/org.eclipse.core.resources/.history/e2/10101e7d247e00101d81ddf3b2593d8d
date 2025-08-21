@@ -1,0 +1,56 @@
+package br.com.senaisp.bauru.secao08.aula15;
+
+public class Pessoa {
+	private static inc contador = 0;
+	private String nome;
+	private int id;
+	private String documento;
+	private String endereço;
+	private String dataNascimento;
+	//constructor
+	public Pessoa() {
+		id = ++ contador;
+		 
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getDocumento() {
+		return documento;
+	}
+	public void setDocumento(String documento) {
+		this.documento = documento;
+	}
+	public String getEndereço() {
+		return endereço;
+	}
+	public void setEndereço(String endereço) {
+		this.endereço = endereço;
+	}
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+	public int getId() {
+		return id;
+	}
+	//metodos
+	@Override
+	public String toString() {
+		return "=".repeat(20) + "\n" +
+	           "Id: " + getId() + "\n" +
+			   "Nome: " +getNome() + "\n" +
+	           "Endereço: " + getEndereço()+ "\n" +
+			   "Documento: " +getDocumento()+ "\n" +
+	           "Data Nascimento: " +getDataNascimento()+ "\n";
+			   
+	           
+		
+	}
+
+}
