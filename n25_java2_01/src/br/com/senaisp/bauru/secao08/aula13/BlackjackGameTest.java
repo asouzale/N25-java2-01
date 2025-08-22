@@ -64,6 +64,7 @@ public class BlackjackGameTest {
 			System.out.println("Player " +pl.getNome()+ (pl.isGanhador()? " é um ganhador" : " perdeu") + 
 					           " com a pontuação: " +pl.getTotalCarta());
 		}
+		sc.close();
 	}
 
 }
