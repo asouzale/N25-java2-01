@@ -18,7 +18,7 @@ public class ExemploExcecao {
 			
 		}catch(InputMismatchException e) {
 			System.out.println("O valor deve ser inteiro!");
-		} catch (Exception e) { // erro generico
+		}catch (Exception e) { // erro generico
 			System.out.println("Ocorreu um erro diferente" + e.getMessage());
 		}
 		System.out.println("Se não der erro eu apareço!!");
