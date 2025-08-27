@@ -8,24 +8,21 @@ public abstract class Pessoa {
 	private String endereco;
 	private String dataNascimento;
 	private char tipoPessoa;
-	//constructor
+	//Constructor
 	public Pessoa() {
 		carregarId();
-		 
 	}
-	//sobrecarga de constructor
-	public Pessoa(String nom, String doc, String ende, String dtNas) throws DocumentoException, EnderecoException{
+	//Sobrecarga de Constructor
+	public Pessoa(String nom, String doc, String ende, String dtNas) 
+			throws DocumentoException, EnderecoException {
 		carregarId();
 		setNome(nom);
 		setDocumento(doc);
 		setEndereco(ende);
 		setDataNascimento(dtNas);
-		
 	}
 	private void carregarId() {
 		id = ++contador;
-		
-		
 	}
 	protected char getTipoPessoa() {
 		return tipoPessoa;
@@ -45,19 +42,22 @@ public abstract class Pessoa {
 	public void setDocumento(String documento) throws DocumentoException {
 		if (isDocumentoValido(documento)) {
 			this.documento = documento;
-		}else {
-			throw new DocumentoException ("Documento Inválido de acordo com o tipo de pessoa!");
+		} else {
+			throw new DocumentoException("Documento Inválido de acordo com o "
+					+ "tipo de pessoa!");
 		}
 	}
+	
 	protected abstract boolean isDocumentoValido(String documento2);
+	
 	public String getEndereco() {
 		return endereco;
 	}
 	public void setEndereco(String endereco) throws EnderecoException {
-		if(!endereco.isEmpty()) {
+		if (!endereco.isEmpty()) {
 			this.endereco = endereco;
-		}else {
-			throw new EnderecoException("Esndereço deve ser preenchido!");
+		} else {
+			throw new EnderecoException("Endereço deve ser preenchido!");
 		}
 	}
 	public String getDataNascimento() {
@@ -69,19 +69,15 @@ public abstract class Pessoa {
 	public int getId() {
 		return id;
 	}
-	//metodos
+	//Métodos
 	@Override
 	public String toString() {
 		return "=".repeat(20) + "\n" +
-	           "Id: " + getId() + "\n" +
-			   "Tipo: " + getTipoPessoa() + "\n" +
-			   "Nome: " +getNome() + "\n" +
-	           "Endereço: " + getEndereco()+ "\n" +
-			   "Documento: " +getDocumento()+ "\n" +
-	           "Data Nascimento: " +getDataNascimento()+ "\n";
-			   
-	           
-		
+			   "Id: " + getId() + "\n" +
+			   "Tipo: " + getTipoPessoa()+"\n"+
+			   "Nome: " + getNome() + "\n" + 
+			   "Endereço: " + getEndereco() + "\n" +
+			   "Documento: " + getDocumento() + "\n" +
+			   "Data Nascimento: " + getDataNascimento() + "\n";
 	}
-
 }

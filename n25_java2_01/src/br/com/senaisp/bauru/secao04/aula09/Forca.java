@@ -50,12 +50,12 @@ public class Forca {
 		return linha;
 	}
 	public void lancarLetra(char letra) {
-		if (palavraSecreta.contains((""+letra).toLowerCase())) {
+		if (palavraSecreta.contains((""+letra).toLowerCase())){
 			String apoio="";
-			//percorrendo a palavra como for
+			//percorrendo a palavra com for
 			for (int i=0;i<palavraSecreta.length();i++) {
 				if ( (""+letra).toLowerCase()
-					.equals(""+palavraSecreta.charAt(i))) {
+					.equals(""+palavraSecreta.charAt(i))){
 					apoio += palavraSecreta.charAt(i);
 				} else {
 					apoio += palavraMascarada.charAt(i);
@@ -65,18 +65,13 @@ public class Forca {
 		} else {
 			erros++; //Aumenta um no erro
 			System.out.println("A letra " + letra + " não está no texto!");
-		
 		}
 	}
-		
 	public boolean ehFimDeJogo() {
-		return erros >=6 || !palavraMascarada.contains("_");
-		
+		return erros>=6 || !palavraMascarada.contains("_");
 	}
 	public String getPalavraRevelada() {
 		return ehFimDeJogo() ? palavraSecreta : "";
-		
-		
 	}
 }
 

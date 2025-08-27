@@ -14,15 +14,14 @@ public class ForcaTeste {
 			//
 			char letra=sc.nextLine().charAt(0);
 			fo.lancarLetra(letra);
-		}while (!fo.ehFimDeJogo());
+		} while(!fo.ehFimDeJogo());
 		sc.close();
 		if (fo.getErros()>=6) {
 			System.out.println("Você foi enforcado! :-(");
 		} else {
-			System.out.println("Você venceu! :-)");
+			System.out.println("Você Venceu! :-)");
 		}
-		System.out.println("A palavra foi: " + fo.getPalavraRevelada());
-		
+		System.out.println("A palavra foi " + fo.getPalavraRevelada());
 	}
 
 }

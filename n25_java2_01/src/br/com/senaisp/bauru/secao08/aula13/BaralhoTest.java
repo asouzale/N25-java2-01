@@ -5,7 +5,7 @@ import br.com.senaisp.bauru.secao05.aula11.Carta;
 public class BaralhoTest {
 
 	public static void main(String[] args) {
-		//Criando Baralho
+		//Criando o Baralho
 		Baralho br = new Baralho();
 		Carta ct = null;
 		do {
@@ -14,9 +14,6 @@ public class BaralhoTest {
 				System.out.println(ct);
 			}
 		}while(ct!=null);
-		
-				
-
 	}
 
 }

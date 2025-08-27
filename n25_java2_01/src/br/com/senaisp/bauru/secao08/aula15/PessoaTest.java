@@ -11,18 +11,21 @@ public class PessoaTest {
 			pe01.setDocumento("123.456.789-09");
 		} catch (DocumentoException e) {
 			System.out.println("O Documento está inválido!");
-		}	catch (EnderecoException e) {
-			System.out.println("O endereço deve ser preenchido!");	
-		}
-			catch (Exception e) {
-				e.printStackTrace();
+		} catch (EnderecoException e) {
+			System.out.println("O Endereço deve ser preenchido!");
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		pe01.setDataNascimento("20/05/1999");
-		
+
 		pe02.setNome("Roberval da Silva 2");
 		try {
 			pe02.setEndereco("Rua das Ruas, 12345");
-			pe02.setDocumento("123.456.789-10");
+			pe02.setDocumento("12345678910");
+		} catch (DocumentoException e) {
+			System.out.println("O Documento está inválido!");
+		} catch (EnderecoException e) {
+			System.out.println("O Endereço deve ser preenchido!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -30,7 +33,6 @@ public class PessoaTest {
 		
 		System.out.println(pe01);
 		System.out.println(pe02);
-
 	}
 
 }

@@ -8,38 +8,34 @@ public class Baralho {
 	private Carta[] cartas;
 	private Random rnd;
 	private byte[] disponiveis;
-	//constructor
+	//Constructor
 	public Baralho() {
 		cartas = new Carta[Carta.NAIPES.length * Carta.NUMEROS.length];
 		rnd = new Random();
 		disponiveis = new byte[cartas.length];
-		//criando as cartas
-		for (int i=0;i<cartas.length;i++) {
-			cartas [i] = new Carta(i/13,i%13);
-			//guardando os indices disponiveis
-			disponiveis [i] = (byte) i;			
+		//Criando as cartas
+		for (int i=0; i<cartas.length; i++) {
+			cartas[i] = new Carta( i / 13, i % 13);
+			//guardando os índices disponíveis
+			disponiveis[i] = (byte) i;
 		}
 	}
 	public Carta sortearCarta() {
 		Carta ret = null;
 		if (disponiveis.length>0) {
 			int idx = rnd.nextInt(disponiveis.length);
-			ret = cartas[disponiveis [idx]];
+			ret = cartas[disponiveis[idx]];
 			atualizarDisponiveis(idx);
-			
-			
 		}
 		return ret;
 	}
 	private void atualizarDisponiveis(int idx) {
-		byte[] apoio = disponiveis; //copiando o endereço do vetor (copia para guardar em memoria e combina com o anterior
-		disponiveis = new byte[apoio.length - 1];  //diminuo 1
-		for (int i=0,j=0;i<apoio.length;i++) {
+		byte[] apoio = disponiveis; //copiando o endereço do vetor
+		disponiveis = new byte[apoio.length - 1]; //diminuo 1
+		for(int i=0, j=0; i<apoio.length; i++) {
 			if (i!=idx) {
 				disponiveis[j++] = apoio[i];
 			}
-			
 		}
-		
 	}
 }
