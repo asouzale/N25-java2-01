@@ -27,7 +27,7 @@ public class ConectorBancoDados {
 			
 				""";
 		try {
-			Statement stmt = conn.createStatement();
+		 	Statement stmt = conn.createStatement();
 			stmt.execute(tabela);
 			
 		}catch(Exception e) {
@@ -43,5 +43,8 @@ public class ConectorBancoDados {
 	}
 	public String getConnStr() {
 		return connStr;
+	}
+	public Connection getConnection() {
+		return conn;
 	}
 }
