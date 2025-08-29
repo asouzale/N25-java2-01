@@ -2,6 +2,7 @@ package br.com.senaisp.bauru.richard.test;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Scanner;
 
 import br.com.senaisp.bauru.richard.classes.Produto;
 
@@ -17,6 +18,20 @@ public class ProdutoTest {
 				System.out.println(prod.getDescricao() + " - " + prod.getId());
 				
 			}
+			//pesquisando um produto
+			System.out.println("Informe o id a ser pesquisado");
+			Scanner sc = new Scanner(System.in);
+			int pId = sc.nextInt();
+			prd = Produto.consultarProdutoPorId(pId);
+			if (prd != null) {
+				System.out.println("Produto: " + prd.getDescricao());
+				prd.setDescricao("Produto alterado = XPTO");
+				prd.setPreco(15.90);
+				//gravando produto
+				prd.atualizarBanco();
+			}
+			sc.close();
+		
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

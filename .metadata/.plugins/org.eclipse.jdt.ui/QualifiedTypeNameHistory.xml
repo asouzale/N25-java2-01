@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao04.aula08.Calculadora"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao04.aula10.CalculoBaskara"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao05.aula11.TicTacToe"/>
@@ -17,8 +16,6 @@
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao08.aula15.PessoaFisica"/>
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao08.aula15.PessoaJuridica"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao08.aula15.EnderecoException"/>
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao08.aula15.DocumentoException"/>
@@ -28,10 +25,18 @@
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="br.com.senaisp.bauru.richard.classes.ConectorBancoDados"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="br.com.senaisp.bauru.richard.classes.Produto"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="br.com.senaisp.bauru.richard.classes.ConectorBancoDados"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.awt.dnd.DropTargetDragEvent"/>
+    <fullyQualifiedTypeName name="jdk.vm.ci.code.TargetDescription"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="com.sun.media.sound.EmergencySoundbank"/>
+    <fullyQualifiedTypeName name="br.com.senaisp.bauru.richard.classes.Produto"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>
