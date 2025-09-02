@@ -24,6 +24,9 @@ public class Produto {
 		conn = ConectorBancoDados.getInstancia();
 		
 	}
+	public Produto() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getDescricao() {
 		return descricao;
 	}

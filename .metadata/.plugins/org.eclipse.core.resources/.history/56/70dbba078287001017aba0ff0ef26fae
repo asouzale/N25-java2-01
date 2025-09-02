@@ -1,0 +1,93 @@
+package br.com.senaisp.bauru.richard.test;
+
+import java.sql.SQLException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import br.com.senaisp.bauru.richard.classes.Produto;
+
+public class CadastramentoProduto {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int op;
+		do {
+			System.out.println("Sistema de Controle de Produtos");
+			System.out.println("1 - Cadastrar um produto");
+			System.out.println("2 - Listar produtos");
+			System.out.println("3 - Consultar um produto");
+			System.out.println("4 - Alterar um produto");
+			System.out.println("5 - Excluir um produto");
+			System.out.println("9 - Fim");
+			System.out.println("Escolha sua opção: ");
+			//Tratamento para entrada da opção
+			try {
+				op = sc.nextInt();
+			}catch(InputMismatchException e) {
+				op=0;
+				sc.nextLine();//Captura o enter do erro
+			}
+			//Verificando as opções
+			switch(op) {
+			case 1 -> cadastrarProduto(sc);
+			case 2 -> listarProdutos(sc);
+			case 3 -> consultarProduto(sc);
+			case 4 -> cadastrarProduto(sc);
+			case 5 -> excluirProduto(sc);
+			case 9 -> System.out.println("Até mais!");
+			default -> System.out.println("Opção inválida!!!");
+			}
+			
+		} while (op != 9);
+	}
+
+	private static Object excluirProduto(Scanner sc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static Object consultarProduto(Scanner sc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static Object listarProdutos(Scanner sc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private static void cadastrarProduto(Scanner sc) {
+		System.out.println("Cadastramento de produto");
+		do {
+			try {
+				if (sc.hasNext()) sc.nextLine(); 
+				//se tiver algo ainda no scanner, capturamos na linha acima
+				System.out.println("Digite a descrição: ");
+				String desc = sc.nextLine();
+	
+				System.out.println("Digite o saldo: ");
+				double saldo = sc.nextDouble();
+	
+				System.out.println("Digite o preço: ");
+				double preco = sc.nextDouble();
+				
+				sc.nextLine(); //capturando o enter do preco
+				
+				System.out.println("Confirma gravação do produto (S/N)? ");
+				String conf = sc.nextLine();
+				
+				if (conf.toLowerCase().equals("s")) {
+					try {
+						Produto.create(desc, saldo, preco);
+					} catch (SQLException e) {
+						System.out.println("Problema ao gravar registro! " + 
+								e.getMessage());
+					}
+				}
+			} catch (InputMismatchException e) {
+				System.out.println("Por favor, digite somente números!");
+			}
+		} while(true);
+	}
+
+}
