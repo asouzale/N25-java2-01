@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import br.com.senaisp.bauru.secao05.aula11.Carta;
 
-public class BlackJackGameTest {
+public class BlackjackGameTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
